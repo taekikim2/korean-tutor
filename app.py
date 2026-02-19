@@ -18,7 +18,8 @@ GEMINI_API_KEY = "AIzaSyC6xLPcorUXqLjx8oHVsV4dJ8pl6uCmXBI"
 
 # Gemini AI 설정
 genai.configure(api_key=GEMINI_API_KEY)
-ai_model = genai.GenerativeModel('gemini-1.5-flash')
+# 모델 이름 앞에 'models/'를 붙여주거나, 최신 이름인 'gemini-1.5-flash-latest'를 권장합니다.
+ai_model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 try:
     # 2. 데이터 불러오기 (실시간 반영을 위해 ttl=0)
